@@ -1,0 +1,12 @@
+
+
+<h2 id = band_head> We have great music from these bands </h2>
+<table>
+
+  <tr>
+    <label>Name</label><br>
+  <% @bands.each do |band| %><br>
+  <a href="<%=band_url(band)%>"><%=band.name %></a>
+  </tr>
+    <%end %>
+</table>

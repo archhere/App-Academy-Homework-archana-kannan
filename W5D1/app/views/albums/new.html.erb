@@ -1,0 +1,24 @@
+<h2> Add new album</h2>
+<form action="/albums" method="post">
+  <label for="title">Album Title<input type="text" name="album[title]" value="<%=@album.title%>">
+  </label>
+  <label for="year">Year Released <input type="integer" name="album[year]" value="<%=@album.year%>">
+    </label>
+  <label for="band_id">Band</label>
+  <select name="album[band_id]">
+    <%Band.all.each do |band| %>
+    <option
+    <%="selected" if @album.band_id == band.id %>
+    value="<%=band.id%>">
+    <%=band.name%>
+  </option>
+<%end %>
+</select>
+<label for="live_t">Live</label>
+<input type="radio" name="album[live]" value="True" <%="checked" if @album.live  %>>
+
+<label for="live_f">Studio</label>
+<input type="radio" name="album[live]" value="False" <%="checked" if !@album.live  %>><br><br>
+<input id = "add_album" type="submit" value="Add">
+
+</form>

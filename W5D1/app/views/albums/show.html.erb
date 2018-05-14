@@ -1,0 +1,12 @@
+<h2>Album Details</h2>
+
+<%if @album.live %>
+Live Performance
+<%else %>
+Studio Performance
+<%end %> <br>
+<label for="album_title">Title : </label><%=@album.title %></br>
+<label for="album_year">Year : </label><%=@album.year %></br>
+<label for="band_name">Band Name : </label> : <%=@album.band.name %></br><br>
+
+<a href="/bands">Check out all our bands</a>

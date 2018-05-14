@@ -1,0 +1,11 @@
+<br> <br> <br>
+<%= @band.name %>
+
+<ul>
+  <li><a class = "button" href="<%=edit_band_url(@band)%>">Edit Band</a></li>
+  <li> <a class = "button" href="/bands/new">Add band</a></li>
+  <li> <a class= "button" href="/bands"><br>Home</a></li>
+  <li><form action="<%=band_url(@band)%>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="destroy">
+  </form></li>
