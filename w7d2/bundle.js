@@ -1353,6 +1353,15 @@ var addLoggingToDispatch = function addLoggingToDispatch(store) {
   };
 };
 
+var sillyMiddleware = function sillyMiddleware(store) {
+  return function (next) {
+    return function (action) {
+      console.log("Silly");
+      next(action);
+    };
+  };
+};
+
 exports.default = configureStore;
 
 /***/ }),
