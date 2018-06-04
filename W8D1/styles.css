@@ -1,0 +1,47 @@
+body{
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+/* .my_image{
+  position:absolute;
+  top: 200px;
+  max-height: 150px;
+max-width: 200px;
+width: 120px;
+height: 120px;
+} */
+
+.mynav{
+  display: flex;
+  padding-top:  10px;
+  border: 1px solid lightgray;
+
+}
+
+.thisbox{
+  /* position:absolute;
+  top: 200px; */
+}
+
+.my_image{
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+.left li{
+  display: inline;
+  padding-right: 30px;
+  position: relative;
+  left: 80px;
+  /* padding-left: 30px; */
+}
+
+.right li{
+  display: inline;
+  position: relative;
+  left: 400px;
+  padding-right: 30px;
+}
