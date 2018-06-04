@@ -17,26 +17,45 @@ height: 120px;
   padding-top:  10px;
   border: 1px solid lightgray;
 
+
 }
 
 .thisbox{
-  /* position:absolute;
-  top: 200px; */
+
+  background-image: url(./splash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.my_image{
-
-    max-width: 100%;
-    height: auto;
-
+.thisbox p{
+  position: relative;
+  top: 200px;
 }
+
+
 
 .left li{
   display: inline;
   padding-right: 30px;
   position: relative;
   left: 80px;
-  /* padding-left: 30px; */
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  background: gray;
 }
 
 .right li{
@@ -44,4 +63,10 @@ height: 120px;
   position: relative;
   left: 400px;
   padding-right: 30px;
+
+}
+
+.user{
+  position:relative;
+  left:250px;
 }
